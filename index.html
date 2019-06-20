@@ -10,9 +10,17 @@
 </head>
 
 <body>
-	<header class="navigation">
-		<a class="navigation__link" href="index.html">Strona główna</a>
-		<a class="navigation__link" href="podstrona.html">Podstrona</a><br>
+	<header class="site-header">
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a class="navigation__link" href="index.html">Strona główna</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="podstrona.html">Podstrona</a><br>
+				</li>
+			</ul>
+		</nav>	
 	</header>
 	<main id="top" class="main">
 		<header class="header">
@@ -22,16 +30,33 @@
 		</header>
 
 		<section class="about">
-			<div class="box">Test</div>			
+			<div class="box">Test</div>
 			<h2 class="about__header">Kim jestem?</h2>
 			<p class="about__paragraph">
-					<img src="michal.jpg" alt="Uśmiechnięty Michał" class ="about__picture">Hej! Na co dzień pracuję jako <b>kierowca</b> zawodowy. W wolnych chwilą uczę się
+				<img src="michal.jpg" alt="Uśmiechnięty Michał" class="about__picture">Hej! Na co dzień pracuję jako
+				<b>kierowca</b> zawodowy. W wolnych chwilą uczę się
 				<strong>frontendu</strong>, lubię sport, moją
 				pasją jest <i>siatkówka</i>.
 				<br>
 				<a class="about__link" href="#pamietniczek">Przejdź do pamiętniczka</a>
 			</p>
 			<p class="about__paragraph about__paragraph--js"></p>
+			<section class="hobby">
+				<ul class="hobby__list">
+					<li>nagrywane szkolenie</li>
+					<li>dronowanie</li>
+					<li>spanie</li>
+					<li>układanie planu dnia
+						<ol>
+							<li>Otwórz przeglądarkę</li>
+							<li>wpisz cotenfrontend.pl</li>
+							<li>[enter]</li>
+						</ol>
+					</li>
+				</ul>
+			</section>
+			<section class="plan">
+			</section>
 		</section>
 		<section class="diary" id="pamietniczek">
 			<h2 class="diary__header">Pamiętniczek</h2>
@@ -45,13 +70,13 @@
 				</p>
 			</section>
 			<section class="day">
-					<h3 class="day__title day__title--sunday">
-						Czy nagrywanie szkolenia to prosta sprawa?
-					</h3>
-					<p class="diary__paragraph">
-						Na początku myślałem że tak, później zdałem sobie sprawę że nie :P
-					</p>
-				</section>
+				<h3 class="day__title day__title--sunday">
+					Czy nagrywanie szkolenia to prosta sprawa?
+				</h3>
+				<p class="diary__paragraph">
+					Na początku myślałem że tak, później zdałem sobie sprawę że nie :P
+				</p>
+			</section>
 			<section class="day">
 				<h3 class="day__title">
 					Dzień 1 Tworzenie zgodnego ze standardami HTML-a to sztuka.
@@ -91,7 +116,8 @@
 				<a class="diary__link" href="pamietniczek/dzien1.html">Dzień I Kanban</a><br>
 				<a class="diary__link" href="pamietniczek/dzien2.html">Dzień II HTML II</a><br>
 				<a class="diary__link" href="pamietniczek/dzien3.html">Dzień III CSS II</a><br>
-				<a class="diary__link" href="pamietniczek/dzien4.html">Dzień IV Jak działa internet i przeglądarka</a><br>
+				<a class="diary__link" href="pamietniczek/dzien4.html">Dzień IV Jak działa internet i
+					przeglądarka</a><br>
 				<a class="diary__link" href="pamietniczek/dzien5.html">Dzień V JavaScript</a><br>
 				<a class="diary__link" href="pamietniczek/dzien6.html">Dzień VI Terminal</a><br>
 				<a class="diary__link" href="pamietniczek/dzien7.html">Dzień VII Prace domowe</a><br>
