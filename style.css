@@ -1,0 +1,23 @@
+body {
+    background: #fefefe;
+}
+
+.mainHeader {
+    color: tomato;
+}
+
+.sectionHeader {
+    color: #1460AA;
+}
+
+.diaryHeader {
+    color: #6c1285;
+}
+
+.paragraph {
+    color: darkblue;
+}
+
+.navi{
+    background-color: aquamarine;
+}
