@@ -10,40 +10,44 @@
 </head>
 
 <body>
-	<header>
-		<a href="index.html">Strona główna</a>
-		<a href="podstrona.html">Podstrona</a><br>
+	<header class="navigation">
+		<a class="navigation__link" href="index.html">Strona główna</a>
+		<a class="navigation__link" href="podstrona.html">Podstrona</a><br>
 	</header>
-	<main class="main">
+	<main id="top" class="main">
 		<header class="header">
-			<h1 class="mainHeader">
+			<h1 class="heading">
 				Michał Krysiuk - strona domowa - Hello Git
 			</h1>
 		</header>
 
-		<section>
-			<h2 class="sectionHeader">Kim jestem?</h2>
-			<p class="paragraph">
-				Hej! Na co dzień pracuję jako <b>kierowca</b> zawodowy. W wolnych chwilą uczę się
+		<section class="about">
+			<div class="box">Test</div>			
+			<h2 class="about__header">Kim jestem?</h2>
+			<p class="about__paragraph">
+					<img src="michal.jpg" alt="Uśmiechnięty Michał" class ="about__picture">Hej! Na co dzień pracuję jako <b>kierowca</b> zawodowy. W wolnych chwilą uczę się
 				<strong>frontendu</strong>, lubię sport, moją
 				pasją jest <i>siatkówka</i>.
 				<br>
-				<a href="#pamietniczek">Przejdź do pamiętniczka</a>
+				<a class="about__link" href="#pamietniczek">Przejdź do pamiętniczka</a>
+			</p>
+			<p class="about__paragraph about__paragraph--color">
+				Testuję modyfikator.
 			</p>
 		</section>
-		<section id="pamietniczek">
+		<section class="diary" id="pamietniczek">
 			<h2 class="diaryHeader">Pamiętniczek</h2>
 			<section>
-				<h3>
-					Jak stworzyć prawidłowego <em>HTML-a</em>?
+				<h3 class="thirdHeader">
+					Jak stworzyć prawidłowego <em>HTML-a</em>
 				</h3>
 				<p class="paragraph">
 					Ciężką pracą.<br>
-					<a href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
+					<a class="link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
 				</p>
 			</section>
 			<section>
-				<h3>
+				<h3 class="thirdHeader">
 					Dzień 1 Tworzenie zgodnego ze standardami HTML-a to sztuka.
 				</h3>
 				<p class="paragraph">
@@ -51,7 +55,7 @@
 				</p>
 			</section>
 			<section>
-				<h3>
+				<h3 class="thirdHeader">
 					Dzień 2 Obejrzałem video z tygodnia II.
 				</h3>
 				<p class="paragraph">
@@ -59,7 +63,7 @@
 				</p>
 			</section>
 			<section>
-				<h3>
+				<h3 class="thirdHeader">
 					Dzień 3 Drugi raz obejrzałem video.
 				</h3>
 				<p class="paragraph">
@@ -67,7 +71,7 @@
 				</p>
 			</section>
 			<section>
-				<h3>
+				<h3 class="thirdHeader">
 					Dzień 4 Zrobiłem pracę domową i zakończyłem tydzień II.
 				</h3>
 				<p class="paragraph">
@@ -75,20 +79,20 @@
 				</p>
 			</section>
 			<section id="thirdWeek">
-				<h3>
+				<h3 class="thirdHeader">
 					Tydzień III
 				</h3>
 				<p class="paragraph">Tydzień III</p>
-				<a href="pamietniczek/dzien1.html">Dzień I Kanban</a><br>
-				<a href="pamietniczek/dzien2.html">Dzień II HTML II</a><br>
-				<a href="pamietniczek/dzien3.html">Dzień III CSS II</a><br>
-				<a href="pamietniczek/dzien4.html">Dzień IV Jak działa internet i przeglądarka</a><br>
-				<a href="pamietniczek/dzien5.html">Dzień V JavaScript</a><br>
-				<a href="pamietniczek/dzien6.html">Dzień VI Terminal</a><br>
-				<a href="pamietniczek/dzien7.html">Dzień VII Prace domowe</a><br>
+				<a class="link" href="pamietniczek/dzien1.html">Dzień I Kanban</a><br>
+				<a class="link" href="pamietniczek/dzien2.html">Dzień II HTML II</a><br>
+				<a class="link" href="pamietniczek/dzien3.html">Dzień III CSS II</a><br>
+				<a class="link" href="pamietniczek/dzien4.html">Dzień IV Jak działa internet i przeglądarka</a><br>
+				<a class="link" href="pamietniczek/dzien5.html">Dzień V JavaScript</a><br>
+				<a class="link" href="pamietniczek/dzien6.html">Dzień VI Terminal</a><br>
+				<a class="link" href="pamietniczek/dzien7.html">Dzień VII Prace domowe</a><br>
 			</section>
 			<section>
-				<h3>
+				<h3 class="thirdHeader">
 					Czy nagrywanie szkolenia to prosta sprawa?
 				</h3>
 				<p class="paragraph">
@@ -99,6 +103,7 @@
 
 	</main>
 	<footer>
+		<a href="#top" class="top">Na górę</a>
 		Strona domowa Michała Krysiuka, wszystkie treści są efektem szkolenia WTF: Co ten frontend.
 	</footer>
 	<script src="main.js"></script>

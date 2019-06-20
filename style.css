@@ -1,23 +1,93 @@
 body {
-    background: salmon
+    background: #fefefe;
+    color: #333;
 }
 
-.mainHeader {
-    color: tomato;
-}
-
-.sectionHeader {
+.sectionHeader, .diaryHeader {
     color: #1460AA;
 }
 
-.diaryHeader {
-    color: #6c1285;
+.header {
+    color: yellow;
 }
 
-.paragraph {
-    color: darkblue;
+.heading {
+    color: #00487C;
 }
 
-.navi{
-    background-color: aquamarine;
+.thirdHeader {
+    color: #0496FF;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 16px;
+    background: #fff;
+}
+
+.navigation__link {
+    color: #1A936F;
+}
+
+.about {
+    position: relative;
+}
+
+.about__header {
+    color: #1460AA;
+}
+
+.about__paragraph {
+    padding: 0 0 0 16px;
+    overflow: hidden;
+}
+
+.about__paragraph--color {
+    color: #FF6700;
+}
+
+.about__picture {
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    float: left;
+    margin: 0 16px 16px 0;
+}
+
+.about__link {
+    color: #1A936F;
+}
+
+.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+    padding-top: 50px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    padding: 10px;
+    border: 10px solid red;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+}
+
+.top {
+position: fixed;
+bottom: 10px;
+right: 10px;
+color:#1A936F;
+text-decoration: none;
+}
+
+.diary {
+    clear: left;
 }
