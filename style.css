@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-.main {    
+.main {
     max-width: 700px;
     margin: 32px auto;
     padding-top: 50px;
@@ -19,26 +19,31 @@ body {
 }
 
 .site_header {
-    background: #fff;
+    background: black;
     box-sizing: border-box;
-    position: fixed;    
+    position: fixed;
     top: 0;
-    left: 0;    
-    padding: 16px;    
+    left: 0;
+    padding: 16px;
     width: 100%;
 }
 
-.navigation {
-
-}
+.navigation {}
 
 .navigation__list {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+    
 }
 
 .navigation__item {
     display: inline;
+    padding: 0 10px;
+    text-align: center;
 }
 
 .navigation__link {
@@ -91,7 +96,7 @@ body {
 }
 
 .about {
-    position: relative;
+
 }
 
 .about__header, .diary__header {
@@ -119,19 +124,36 @@ body {
     color: #1A936F;
 }
 
-.box {
-    width: 100px;
+.conteiner{
+    border: 2px solid green;
+    width: 700px;
     height: 100px;
-    background: yellowgreen;
-    padding: 10px;
-    border: 10px solid red;
-    box-sizing: border-box;
     position: sticky;
-    top: 0;
+    top: 82px;
 }
-.hobby {
 
+.box {
+    border: 4px solid red;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: baseline;
 }
+
+.box__item {
+    border: 3px solid #fff;
+    padding: 16px;
+    text-align: center;
+    background: #FFC835;
+    color: #642677;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+}
+
+.hobby {}
 
 .hobby__list {
     list-style: none;
