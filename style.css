@@ -10,7 +10,7 @@ body {
     width: 100%;
 }
 
-.navigation {
+.site_header {
     background: #fff;
     box-sizing: border-box;
     position: fixed;    
@@ -18,6 +18,19 @@ body {
     left: 0;    
     padding: 16px;    
     width: 100%;
+}
+
+.navigation {
+
+}
+
+.navigation__list {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation__item {
+    display: inline;
 }
 
 .navigation__link {
@@ -43,6 +56,11 @@ body {
 .diary__title, .day__title {
     margin: 0 0 16px;
     color: #0496FF;
+}
+
+.table {
+    width: 100%;
+    margin: auto;
 }
 
 .day {
